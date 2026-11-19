@@ -321,6 +321,11 @@
             <actionType>ProductivityAction</actionType>
             <sortOrder>23</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Lead.Create_Lead</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>24</sortOrder>
+        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
