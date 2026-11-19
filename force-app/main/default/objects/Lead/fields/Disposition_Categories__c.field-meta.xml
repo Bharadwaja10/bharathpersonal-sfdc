@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition_Categories__c</fullName>
+    <label>Disposition Categories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Interested</fullName>
+                <default>false</default>
+                <label>Interested</label>
+            </value>
+            <value>
+                <fullName>Follow-up Needed</fullName>
+                <default>false</default>
+                <label>Follow-up Needed</label>
+            </value>
+            <value>
+                <fullName>Callback Requested</fullName>
+                <default>false</default>
+                <label>Callback Requested</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Do Not Call</fullName>
+                <default>false</default>
+                <label>Do Not Call</label>
+            </value>
+            <value>
+                <fullName>Voicemail</fullName>
+                <default>false</default>
+                <label>Voicemail</label>
+            </value>
+            <value>
+                <fullName>Wrong Contact / Wrong Number</fullName>
+                <default>false</default>
+                <label>Wrong Contact / Wrong Number</label>
+            </value>
+            <value>
+                <fullName>NO_ANSWER</fullName>
+                <default>false</default>
+                <label>NO_ANSWER</label>
+            </value>
+            <value>
+                <fullName>Undetermined</fullName>
+                <default>false</default>
+                <label>Undetermined</label>
+            </value>
+            <value>
+                <fullName>Booking a Meeting</fullName>
+                <default>false</default>
+                <label>Booking a Meeting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

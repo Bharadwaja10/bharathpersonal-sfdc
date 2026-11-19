@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blend_Call_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    Blend_Answered_By_c__c = &quot;human&quot;,
+    &quot;Answered&quot;,
+
+    IF(
+        Blend_Answered_By_c__c = &quot;voicemail&quot;,
+        &quot;Voicemail&quot;,
+
+        CASE(
+            Blend_Call_Status_Raw__c,
+
+            &quot;no-answer&quot;, &quot;Not Answered&quot;,
+            &quot;busy&quot;, &quot;Busy&quot;,
+            &quot;failed&quot;, &quot;Failed&quot;,
+            &quot;canceled&quot;, &quot;Cancelled&quot;,
+            &quot;completed&quot;, &quot;Completed&quot;,
+
+            &quot;Pending&quot;
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Blend Call Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
