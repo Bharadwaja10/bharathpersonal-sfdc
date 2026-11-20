@@ -13,6 +13,16 @@ Before you start, make sure you have:
 - **A development org** - Sign up for a free Developer Edition org [here](https://developer.salesforce.com/signup).
 - **Dev Hub enabled** (optional, required to create scratch orgs) - You can enable Dev Hub in your development org under Setup > Dev Hub.  See [Provide Developers Access to Salesforce DX Tools](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_setup_dx_tools.htm).
 
+### Lead duplicate detection
+
+The Lead duplicate-detection Apex service and trigger compare email, phone, and mobile phone values against accessible Leads and Contacts. After installing the project dependencies with `npm install`, check formatting of the implementation and its tests locally with:
+
+```sh
+npx prettier --check force-app/main/default/classes/LeadDuplicateDetectionService.cls force-app/main/default/classes/LeadDuplicateDetectionServiceTest.cls force-app/main/default/triggers/LeadDuplicateDetection.trigger
+```
+
+Apex compilation and Apex tests require validation in a Salesforce org; they are not part of these local checks. This work has not been deployed or run against an org. The trigger invokes duplicate matching, but an interactive warning, match review, continue-save, and choose-existing-record UI flow is not implemented or verified here.
+
 ## Project Structure
 
 Your DX project follows this structure:
