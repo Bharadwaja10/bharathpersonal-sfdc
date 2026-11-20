@@ -4,9 +4,9 @@
     <columns><field>FIRST_NAME</field></columns>
     <columns><field>COMPANY</field></columns>
     <columns><field>STATUS</field></columns>
-    <columns><field>EMAIL</field></columns>
     <columns><field>CREATED_DATE</field></columns>
-    <description>Lead records grouped by owner for an ownership overview.</description>
+    <columns><field>EMAIL</field></columns>
+    <description>Lead records grouped by owner for an ownership overview. This report does not change Lead assignment or access behavior.</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
